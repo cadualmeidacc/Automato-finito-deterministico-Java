@@ -126,22 +126,27 @@ public class Automato {
 				}
 			}
 			
-			if(i == 0) {
+			if(i == 0 && aceito == false) {
 				String nomeInicio = estadoInicial();
 				for(int x = 0; x < transicoes.size(); x++) {
 					if(transicoes.get(x).getLocal().equals(nomeInicio) && transicoes.get(x).getLetra().equals(palavraChar[i] + "")) {
-						atual = transicoes.get(x).getDestino();
-						aceito = true;
-						break;
+						if(i == 0 && i == (palavraChar.length - 1)){
+							aceito = false;
+							break;
+						}else {
+							atual = transicoes.get(x).getDestino();
+							aceito = true;
+							break;
+						}
+						
 					}
 				}
 				
 				
-			}else if(i == (palavraChar.length - 1)) {
+			}else if(i == (palavraChar.length - 1) && aceito == false) {
 				aceito = true;
 				for(int x = 0; x < transicoes.size(); x++) {
 					if(aceito == false) {
-						imprimeNaoAceito();
 						break;
 					}
 					if(transicoes.get(x).getLocal().equals(atual) && transicoes.get(x).getLetra().equals(palavraChar[i] + "")) {
@@ -167,7 +172,12 @@ public class Automato {
 						break;
 					}
 				}
-			}
+			}	
+			
+		}
+		if(aceito == false) {
+			System.out.println("Automato nao aceito!!");
+			
 		}
 	}
 		

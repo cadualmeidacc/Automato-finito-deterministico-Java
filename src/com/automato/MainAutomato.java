@@ -6,7 +6,7 @@ public class MainAutomato {
 
 	public static void main(String[] args) throws FileNotFoundException {
 		
-		String path = "C:\\Users\\Eduardo\\3D Objects\\AutomatoFinitoLFA-main\\arquivoLeitura.txt";
+		String path = "C:\\Users\\Eduardo\\Desktop\\lfa_trabalhopratico1_20212-main\\arquivoLeitura.txt";
 		Automato automato = new Automato();
 		
 		automato.leituraEstados(path);
