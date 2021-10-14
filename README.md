@@ -6,4 +6,4 @@ Alunos: Carlos Eduardo Santos ALmeida /
 
 Para Rodar o projeto será necessário colocar o Path do arquivo na classe MainAutomato.java(o arquivo pode estar em qualquer lugar do seu computador, basta colocar o Path completo). Após isso é preciso somente rodar o projeto e colocar o "Alfabeto" que deseja verificar.
 
-OBS: O programa só está funcionando a parte da leitura do automato finito deterministico, infelizmente não conseguimos fazer todo o processo de transição do automato não deterministo para o deterministo. Mas podemos aprensentar o que tentamso fazer. 
+OBS: O programa só está funcionando a parte da leitura do automato finito deterministico e não deterministico e respondendo caso seja um automato deterministico se ele é aceito ou não, infelizmente não conseguimos fazer todo o processo de transição do automato não deterministo para o deterministo. Mas podemos aprensentar o que tentamso fazer. 
